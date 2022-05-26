@@ -1,0 +1,87 @@
+#mainLoginForm {
+    display: none;
+}
+
+#mainLoginForm {
+    width: 90%;
+    margin: auto;
+    font-weight: bold;
+}
+
+#mainLoginForm h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+    margin-top: 1.5rem;
+}
+
+#mainLoginForm p {
+    text-align: center;
+    margin-top: .25rem;
+    font-weight: 800;
+}
+
+#mainLoginForm p a {
+    color: blue
+}
+
+#mainLoginForm input {
+    display: block;
+    font-size: 1.5rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+#mainLoginForm label {
+    font-size: 1.5rem;
+}
+
+#mainLoginForm button {
+    display: block;
+    margin: auto;
+    width: 100%;
+    font-size: 1.3rem;
+    background-color: rgb(0, 159, 199);
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: .25rem; 
+}
+
+#mainLoginForm .loginErrorMessage {
+    background-color: rgb(255, 70, 70);
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 15px;
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0.65);
+}
+
+@media only screen and (min-width: 500px){
+    #mainLoginForm {
+        width: 55%;
+    }
+}
+
+@media only screen and (min-width: 950px){
+    #mainLoginForm {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    #mainLoginForm {
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 1800px){
+    #mainLoginForm {
+        width: 30%;
+    }
+}
+
+@media only screen and (min-width: 2400px){
+    #mainLoginForm {
+        width: 20%;
+    }
+}

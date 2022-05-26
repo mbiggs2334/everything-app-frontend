@@ -1,0 +1,24 @@
+#newsMain-LoadMoreButton {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    background-color: gray;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: -1.5rem;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+#newsMain-LoadMoreButton:hover{
+    color: white;
+}
+
+#newsMain-header {
+    text-align: center;
+    margin: 1rem 0;
+    margin-bottom: .5rem;
+    font-size: 2.5rem;
+}

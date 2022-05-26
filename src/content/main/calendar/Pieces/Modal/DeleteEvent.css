@@ -1,0 +1,23 @@
+#CalendarModalWrapper .DeleteEvent {
+    font-weight: bold;
+    padding: 1rem;
+    text-align: center;
+}
+
+#CalendarModalWrapper .DeleteEvent h2 {
+    margin: 0;
+}
+
+#CalendarModalWrapper .DeleteEvent p {
+    margin: .5rem;
+}
+
+#CalendarModalWrapper .DeleteEvent div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#CalendarModalWrapper .DeleteEvent button:first-child {
+    margin-right: 1rem;
+}

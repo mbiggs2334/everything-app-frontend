@@ -1,0 +1,49 @@
+#newsMobile {
+    margin: auto;
+}
+
+#newsMobile-header {
+    text-align: center;
+    margin: 1rem 0;
+    margin-bottom: .5rem;
+}
+
+#newsMobile hr {
+    margin: 0 auto;
+    padding: 0;
+    width: 90%;
+}
+
+#newsMobile-LoadMoreButton {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: .5rem 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-bottom: 2rem;
+}
+
+@media only screen and (min-width: 315px){
+    #newsMobile {
+        width: 90%;
+    }
+
+    #newsMobile-LoadMoreButton {
+        border: 1px solid black;
+    }
+
+}
+
+
+@media only screen and (min-width: 400px){
+    #newsMobile {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 450px){
+    #newsMobile {
+        width: 70%;
+    }
+}

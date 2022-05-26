@@ -1,0 +1,9 @@
+.weatherApiError {
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgba(255, 0, 0, 0.315);
+    padding: .25rem;
+    margin-top: .25rem;
+    border-radius: 5px;
+}

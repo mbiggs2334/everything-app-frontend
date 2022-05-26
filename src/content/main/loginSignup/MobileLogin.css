@@ -1,0 +1,71 @@
+#mobileLoginForm {
+    width: 90%;
+    margin: auto;
+    font-weight: bold;
+}
+
+#mobileLoginForm h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+    margin-top: 1.5rem;
+}
+
+#mobileLoginForm p {
+    text-align: center;
+    margin-top: .25rem;
+    font-weight: 800;
+}
+
+#mobileLoginForm p a {
+    color: blue
+}
+
+#mobileLoginForm input {
+    display: block;
+    font-size: 1.5rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+#mobileLoginForm label {
+    font-size: 1.5rem;
+}
+
+#mobileLoginForm button {
+    display: block;
+    margin: auto;
+    width: 100%;
+    font-size: 1.3rem;
+    background-color: rgb(0, 159, 199);
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: .25rem; 
+}
+
+#mobileLoginForm .loginErrorMessage {
+    background-color: rgb(255, 70, 70);
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 15px;
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0.65);
+}
+
+@media only screen and (min-width: 350px){
+    #mobileLoginForm {
+        width: 75%;
+    }
+}
+
+@media only screen and (min-width: 425px){
+    #mobileLoginForm {
+        width: 65%;
+    }
+}
+
+@media only screen and (min-width: 500px){
+    #mobileLoginForm {
+        width: 55%;
+    }
+}

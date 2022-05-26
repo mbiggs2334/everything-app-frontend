@@ -1,0 +1,86 @@
+#weatherMain {
+    display: none;
+}
+
+#weatherMain #weatherMainHeader {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 2.5rem;
+}
+
+#weatherMain form {
+    margin: auto;
+    text-align: center;
+}
+
+#weatherMain #weatherSearchBarForm input {
+    width: 50%;
+}
+
+#weatherMain #weatherMainHeader .group-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+#weatherMain #weatherMainHeader .group-input input, #weatherMainHeader .group-input button{
+    font-size: 1rem;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#weatherMain #weatherMainHeader .group-input input {
+    border-right: none;
+    padding: 4px;
+}
+
+#weatherMain #weatherMainHeader .group-input button{
+    border-left: none;
+    padding: 4px 6px;
+}
+
+#weatherMain #weatherMainHeader .group-input button i {
+    transform: translateY(1px);
+}
+
+@media only screen and (min-width: 600px){
+    #weatherMain {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 750px){
+    #weatherMain {
+        width: 80%;
+    }
+
+    #weatherMainHeader {
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    #weatherMain {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 1400px){
+    #weatherMain {
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 1800px){
+    #weatherMain {
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 2400px){
+    #weatherMain {
+        width: 30%;
+    }
+}

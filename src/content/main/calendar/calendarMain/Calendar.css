@@ -1,0 +1,177 @@
+#CalendarMain #CalendarDiv {
+    width: 100%;
+    overflow: auto;
+    border-top: 1px solid black;
+}
+
+#CalendarMain #CalendarMonthHeader {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+#CalendarMain #CalendarMonthHeader:hover{
+    color: white;
+}
+
+#CalendarMain #MonthHeaderDiv {
+    padding: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#CalendarMain #MonthHeaderDiv i {
+    font-size: 2rem;
+    padding: 0 1rem;
+}
+
+#CalendarMain #CalendarTable #DaysOfTheWeek {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    border-bottom: none;
+}
+
+.dayHeader {
+    padding: .25rem;
+}
+
+#CalendarMain #CalendarTable #DaysOfTheWeek div {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    border-right: 1px solid black;
+}
+
+#CalendarMain #CalendarTable #DaysOfTheWeek div:last-child {
+    border-right: none;
+}
+
+#CalendarMain #CalendarYearHeader {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+#CalendarMain #CalendarYearHeader:hover{
+    color: white;
+}
+
+#CalendarMain #YearHeaderDiv {
+    padding: .5rem;
+    border-top: 1px solid black;
+    background-color: gray;
+}
+
+
+#CalendarMain .WeekRow {
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    border: 1px solid black;
+    border-bottom: none;
+}
+
+#CalendarMain .WeekRow:last-child {
+    border-bottom: 1px solid black;
+}
+
+#CalendarMain .WeekRow div {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    border-right: 1px solid black;
+}
+
+#CalendarMain .WeekRow div:last-child {
+    border-right: none;
+}
+
+#CalendarMain .WeekRow span {
+    text-align: center;
+    
+}
+
+.day, .today {
+    overflow-y: auto;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.day span, .today span {
+    display: block;
+    border-bottom: 1px solid black;
+    background-color: rgb(175, 175, 175);
+}
+
+.today {
+    background-color: rgb(117, 223, 255);
+}
+
+.day:hover, .today:hover {
+    color: white;
+}
+
+.day:hover {
+    background-color: black;
+}
+
+.today:hover {
+    background-color: rgb(0, 195, 255);
+}
+
+#CalendarMain h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 1rem;
+}
+
+@media only screen and (min-width: 992px){
+    #CalendarMain .WeekRow, #CalendarMain #CalendarTable #DaysOfTheWeek {
+        border-left: none;
+        border-right: none;
+    }
+    #CalendarMain #CalendarTable {
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    #CalendarMain {
+        width: 90%;
+        margin: auto;
+        
+    }
+
+    #CalendarMain #CalendarDiv {
+        border: 1px solid black;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    }
+}
+
+@media only screen and (min-width: 1600px){
+    #CalendarMain {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 2000px){
+    #CalendarMain {
+        width: 70%;
+    }
+}
+
+i {
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+i:hover{
+    color: rgb(71, 71, 71);
+}

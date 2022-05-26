@@ -1,0 +1,47 @@
+#notesMainDiv {
+    border-bottom: 1px solid black;
+} 
+
+#notesMainDiv:last-child{
+    border-bottom: none;
+}
+
+#notesMainDiv a {
+    color: black;
+    text-decoration: none;
+}
+
+#notesMainDivTitleDate {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: .25rem .25rem .35rem .5rem;
+    line-height: normal;
+    line-break: anywhere;
+}
+#notesMainContent {
+    overflow: hidden;
+    white-space: pre;
+    line-break: strict;
+}
+
+#notesMainDiv span {
+    text-overflow: ellipsis;
+}
+
+#notesMainDivIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 .7rem;
+    border-right: 1px solid black;
+    font-size: 1.2rem;
+}
+
+#noteMainDate {
+    font-size: .6rem;
+}
+
+#mainNoteContainer {
+    display: relative;
+}

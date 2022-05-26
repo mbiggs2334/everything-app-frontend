@@ -1,0 +1,11 @@
+#NotLoggedInCalendar {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 1.1rem;
+    background-color: rgb(255, 119, 119);
+    padding: 1rem;
+    width: 80%;
+    margin: auto;
+    margin-top: 1rem;
+}

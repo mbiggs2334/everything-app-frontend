@@ -1,0 +1,21 @@
+/* @keyframes down {
+    to {transform: translateY(0);}
+}
+
+@keyframes up {
+    from {transform: translateY(0);}
+    to {transform: translateY(-87%);}
+}
+
+
+#weatherMobile .lowerDisplay {
+    animation-name: down;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+#weatherMobile .raiseDisplay {
+    animation-name: up;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+} */

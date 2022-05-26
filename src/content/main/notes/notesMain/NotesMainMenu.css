@@ -1,0 +1,144 @@
+#notesMain {
+    display: none;
+}
+
+#notesMainContainer {
+    width: 90%;
+    margin: auto;
+    font-weight: bold;
+    border-radius: 5px;
+    overflow: hidden;
+    padding-top: .8rem;
+}
+
+#mainNotesAddButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#notesMainDivContainer {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+#mainNoteSortSelects {
+    position: relative;
+    text-align: center;
+    margin-bottom: .25rem;
+}
+
+#mainNoteSortSelects select {
+    background-color: rgb(0, 159, 199);
+    border-radius: 5px;
+    margin: .25rem;
+    cursor: pointer;
+}
+
+#mainNoteSortSelects select:focus {
+    outline: none;
+}
+
+#mainNoteSortSelects select option::selection {
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#mainNoNotes {
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+}
+
+#notesMain .noUserMessage {
+    padding-top: .25rem;
+    width: 90%;
+    margin: auto;
+    font-weight: bold;
+    text-align: center;
+}
+
+#notesMainHeader {
+    text-align: center;
+    margin: 0;
+    margin: .5rem 0 .25rem 0;
+}
+
+#notesMainHeader + hr {
+    width: 90%;
+    margin: auto;
+}
+
+@media only screen and (min-width: 325px){
+
+    #notesMainContainer {
+        width: 80%;
+        margin: auto;
+    }
+
+    #notesMainHeader + hr {
+        width: 80%;
+    }
+
+}
+
+@media only screen and (min-width: 800px){
+
+    #notesMainContainer {
+        width: 60%;
+        margin: auto;
+    }
+
+    #notesMainHeader + hr {
+        width: 60%;
+    }
+
+    #notesMainHeader {
+        font-size: 2.5rem;
+    }
+
+}
+
+@media only screen and (min-width: 1600px){
+
+    #notesMainContainer {
+        width: 50%;
+        margin: auto;
+    }
+
+    #notesMainHeader + hr {
+        width: 50%;
+    }
+
+}
+
+@media only screen and (min-width: 2000px){
+
+    #notesMainContainer {
+        width: 40%;
+        margin: auto;
+    }
+
+    #notesMainHeader + hr {
+        width: 40%;
+    }
+
+}
+
+@media only screen and (min-width: 2400px){
+
+    #notesMainContainer {
+        width: 30%;
+        margin: auto;
+    }
+
+    #notesMainHeader + hr {
+        width: 30%;
+    }
+
+}

@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+//Components
+import Header from './content/header/Header';
+import Routes from './content/main/ParentRoutes';
+import Footer from './content/footer/Footer';
+
+//Funtions & Classes & Helpers
+import userContext from './UserContext';
+
+const App = () => {
+
+    const [user, setUser] = useState(JSON.parse(localStorage.getItem('user')) || null);
+
+    return (
+        <>
+        <userContext.Provider value={{user, setUser}}>
+            <Header />
+            <Routes user={user}/>
+            <Footer />
+        </userContext.Provider>
+        </>
+    )
+};
 
 export default App;

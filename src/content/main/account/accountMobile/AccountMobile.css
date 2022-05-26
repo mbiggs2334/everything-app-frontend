@@ -1,0 +1,130 @@
+#accountMobileHeader {
+    text-align: center;
+    margin: 0;
+    margin-top: 1rem;
+}
+
+#accountMobile hr {
+    margin: auto;
+    margin-top: .25rem;
+}
+
+#editUsernameButton {
+    float: right;
+}
+
+#accountMobileMain {
+    width: 90%;
+    margin: auto;
+    padding: .5rem .5rem;
+}
+
+#accountMobileForm {
+    font-size: 1.2rem;
+}
+
+#accountMobileForm label {
+    display: block;
+    font-weight: bold;
+}
+
+#accountMobileForm #accountMobileCancelButton {
+    background-color: rgb(255, 32, 32);
+    color: white;
+    margin-top: .25rem;
+}
+
+#accountMobileForm input {
+    width: 100%;
+    font-size: 1.1rem;
+    margin-bottom: .5rem
+}
+
+#accountMobileErrorMessage {
+    margin: 0;
+    margin-bottom: .5rem;
+    text-align: center;
+    font-weight: bold;
+    background-color:rgb(255, 32, 32);
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: .5rem;
+}
+
+#accountMobileInfo {
+    font-size: 1.2rem;
+}
+
+#accountMobileInfo div{
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+}
+
+#accountMobileErrorMessage span {
+    display: block;
+}
+
+#accountMobileErrorMessage span:first-child {
+    margin-bottom: .25rem;
+}
+
+#accountMobileChngPassBtn, #accountMobileForm button {
+    width: 100%;
+    background-color: rgb(71, 181, 255); 
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+@media only screen and (min-width: 350px){
+
+    #accountMobileMain {
+        width: 80%;
+    }
+
+    
+    #accountMobile hr {
+        width: 80%;
+    }
+
+}
+
+@media only screen and (min-width: 400px){
+
+    #accountMobileMain {
+        width: 75%;
+    }
+
+    
+    #accountMobile hr {
+        width: 75%;
+    }
+
+}
+
+@media only screen and (min-width: 450px){
+
+    #accountMobileMain {
+        width: 70%;
+    }
+
+    
+    #accountMobile hr {
+        width: 70%;
+    }
+
+}
+
+@media only screen and (min-width: 500px){
+
+    #accountMobileMain {
+        width: 65%;
+    }
+
+    
+    #accountMobile hr {
+        width: 65%;
+    }
+
+}

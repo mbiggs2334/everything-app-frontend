@@ -1,0 +1,25 @@
+#CalendarModalWrapper .EventDiv, #CalendarModalWrapper .EventDivCalendar {
+    background-color: transparent;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    border-bottom: 1px solid black;
+    padding: .2rem;
+    font-weight: bold;
+}
+
+#CalendarModalWrapper .EventDiv:last-child, #CalendarMain .EventDivCalendar:last-child {
+    border-bottom: none;
+}
+
+#CalendarModalWrapper .EventDiv {
+    padding: .25rem;
+    padding-left: 1rem;
+    cursor: pointer;
+    transition: all .1s ease;
+}
+
+.EventDiv:hover{
+    background-color: black !important;
+    color: white;
+}

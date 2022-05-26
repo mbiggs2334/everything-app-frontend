@@ -1,0 +1,307 @@
+#weatherMain #currentWeatherDisplayWrapper {
+    margin: auto;
+    margin-top: .5rem;
+    width: 90%;
+    border-radius: 10px;
+    overflow: auto;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+    height: 50%;
+    border: 1px solid black;
+}
+
+#weatherMain #weatherInfo-panel2Wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+#weatherMain #weatherInfo-panel2ArrowContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: .1rem .5rem;
+}
+
+#weatherMain #currentWeatherDisplayPanel1 {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    border-radius: 10px 10px 0 0;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 7px rgba(0, 0, 0, .5);
+    border-bottom: none;
+}
+
+#weatherMain #currentWeatherDisplayPanel2 {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    border-radius: 0 0 10px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-top: none;
+    box-shadow: 0 0 7px rgba(0, 0, 0, .5);
+    position: relative;
+    z-index: -1;
+}
+
+#weatherMain .weatherDay {
+    background: linear-gradient(15deg, rgba(244,232,212,1) 0%, rgba(255,248,239,1) 35%, rgba(130,178,232,1) 64%, rgba(86,140,216,1) 77%);
+    color: black;
+}
+
+#weatherMain .weatherDay2 {
+    background: linear-gradient(8deg, rgba(244,232,212,1) 0%, rgba(255,248,239,1) 25%, rgba(86,140,216,1) 50%);
+    color: black;
+}
+
+#weatherMain .weatherNight {
+    background: linear-gradient(15deg, rgba(72,52,117,1) 0%, rgba(43,47,119,1) 15%, rgba(20,24,82,1) 47%, rgba(7,11,52,1) 78%);
+    color: white;
+}
+
+#weatherMain .weatherNight2 {
+    background: linear-gradient(0deg, rgba(72,52,117,1) 0%, rgba(43,47,119,1) 15%, rgba(20,24,82,1) 47%, rgba(7,11,52,1) 78%);
+    color: white;
+}
+
+#weatherMain .weatherDay #weatherInfo-panel1 {
+    border-bottom: 1px solid black;
+}
+
+#weatherMain .weatherNight #weatherInfo-panel1 {
+    border-bottom: 1px solid white;
+}
+
+#weatherMain .weatherDay .weatherTempInactive {
+    color: rgba(0, 0, 0, .5);
+}
+
+#weatherMain .weatherNight .weatherTempInactive {
+    color: rgba(255, 255, 255, .5);
+}
+
+#weatherMain .weatherTempInactive {
+    cursor: pointer;
+}
+
+
+#weatherMain .weatherDay hr {
+    border: 1px solid rgba(0, 0, 0, 0.35);
+}
+
+#weatherMain .weatherNight hr {
+    border: 1px solid rgba(255, 255, 255, 0.65);
+}
+
+#weatherMain #weatherLocationCountry {
+    font-size: .85rem;
+    font-weight: 1000;
+    font-style: oblique;
+}
+
+
+/* ------------------ WEATHER INFO PANEL 1 ------------------ */
+
+#weatherMain #weatherInfo-panel1 {
+    display: flex;
+}
+
+#weatherMain #tempSelectionAndView {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#weatherMain #weatherLocationInfo {
+    width: 100%;
+    padding: 1rem;
+}
+
+#weatherMain #weatherLocationInfo span {
+    display: block;
+    margin-bottom: .25rem;
+}
+
+#weatherMain #weatherLocationInfo span:last-child {
+    margin-bottom: 0;
+}
+
+#weatherMain #weatherIconTempContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+#weatherMain #weatherMain #weatherLastUpdated, #weatherLocalTime {
+    font-size: .6rem;
+}
+
+/* ------------------ WEATHER INFO PANEL 2 ------------------ */
+
+#weatherMain #weatherInfo-panel2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#weatherMain #weatherWindInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 0rem;
+    padding-left: 1rem;
+    width: 40%;
+}
+
+#weatherMain #weatherWindInfoDirectionAndLogo {
+    display: flex;
+    flex-direction: row;
+}
+
+#weatherMain #weatherWindInfo h3 {
+    margin: 0;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+#weatherMain #weatherWindInfoDirection {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+#weatherMain #weatherWindInfoArrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+#weatherMain #weatherMiscInfo span {
+    display: block;
+}
+
+#weatherMain #weatherMiscInfo {
+    padding: 1rem;
+    padding-left: .25;
+    padding-right: .5rem;
+    text-align: right;
+    width: 60%;
+}
+
+@media only screen {
+
+    /* ------------------ WEATHER INFO PANEL 1 ------------------ */
+
+    #weatherMain #weatherInfo-panel1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #weatherMain #weatherIconTempContainer {
+        justify-content: space-evenly;
+        width: 100%;
+        margin: auto;
+        padding: 1rem 0;
+    }
+
+    #weatherMain #weatherLocationInfo {
+        text-align: left;
+        padding-top: .5rem;
+    }
+
+    #weatherMain #weatherTemp {
+        font-size: 2rem;
+    }
+
+}
+
+
+@media only screen and (min-width: 350px){
+
+    #weatherMain #weatherIconTempContainer {
+        width: 75%;
+    }
+
+    #weatherMain #weatherLocationInfo {
+        width: 75%;
+    }
+
+    #weatherMain #weatherWindInfo {
+        padding-left: 1rem;
+    }
+
+
+    #weatherMain #weatherMiscInfo {
+        padding: 1rem 1rem;
+    }
+}
+
+@media only screen and (min-width: 400px) {
+
+
+    #weatherMain #weatherInfo-panel1 {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #weatherMain #weatherIconTempContainer {
+        width: 80%;
+        padding: 1rem;
+        padding-left: .8rem;
+    }
+
+    #weatherMain #tempSelectionAndView {
+        width: 50%;
+    }
+
+    #weatherMain #weatherLocationInfo {
+        text-align: right;
+    }
+
+    #weatherMain #weatherTemp {
+        font-size: 2rem;
+    }
+
+    #weatherMain #tempSelection{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+        font-size: 1.1rem;
+        margin-bottom: .5rem;
+    }
+
+    #weatherMain #weatherLocationCity {
+        font-size: 1.3rem;
+    }
+
+}
+
+@media only screen and (min-width: 500px){
+    #weatherMain #tempSelection {
+        width: 80%
+    }
+
+    #weatherMain #weatherIconTempContainer {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 515px){
+    #weatherMain #weatherIconTempContainer {
+        margin: auto;
+    }
+}
+
+#weatherMain .weatherIconDivBG {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-width: 70px;
+    min-height: 105%;
+    width: 100%;
+}

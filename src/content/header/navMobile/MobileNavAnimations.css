@@ -1,0 +1,46 @@
+#weatherMobileNav, #cryptoMobileNav, 
+#newsMobileNav, #calendarMobileNav, 
+#notesMobileNav {
+    transform: translateY(25rem);
+    animation-name: move;
+    animation-fill-mode: forwards;
+    animation-duration: .4s;
+}
+
+#weatherMobileNav {
+    animation-delay: .20s;
+}
+
+#cryptoMobileNav {
+    animation-delay: .15s;
+}
+
+#newsMobileNav {
+    animation-delay: .05s;
+}
+
+#notesMobileNav {
+    animation-delay: .10s;
+}
+
+#newsMobileNav-iconContainer, #cryptoMobileNav-iconContainer, 
+#weatherMobileNav-iconContainer,#calendarMobileNav-iconContainer, 
+#notesMobileNav-iconContainer, #mobileAccountButton, #mobileLogoutButton,
+#mobileLoginButton, #mobileSignupButton {
+    animation-name: opacity;
+    animation-duration: .3s;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes move {
+    to { transform: translateY(0);}
+}
+
+@keyframes opacity {
+    to { opacity: 100%; transform: translateY(0);}
+}
+
+.rotate {
+    transform: rotateX(-180deg) translate(-50%, 50%) !important;
+}

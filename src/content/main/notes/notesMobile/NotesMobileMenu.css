@@ -1,0 +1,110 @@
+#notesMobileContainer {
+    width: 90%;
+    margin: auto;
+    font-weight: bold;
+    border-radius: 5px;
+    overflow: hidden;
+    padding-top: .8rem;
+}
+
+#mobileNotesAddButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#notesMobileDivContainer {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+#mobileNoteSortSelects {
+    position: relative;
+    text-align: center;
+    margin-bottom: .25rem;
+}
+
+#mobileNoteSortSelects select {
+    background-color: rgb(0, 159, 199);
+    border-radius: 5px;
+    margin: .25rem;
+    cursor: pointer;
+}
+
+#mobileNoteSortSelects select:focus {
+    outline: none;
+}
+
+#mobileNoteSortSelects select option::selection {
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#mobileNoNotes {
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+}
+
+#noUserMessage {
+    margin: 0;
+    padding-top: .25rem;
+    margin: auto;
+    width: 90%;
+    font-weight: bold;
+}
+
+#notesMobileHeader {
+    text-align: center;
+    margin: 0;
+    margin: .5rem 0 .25rem 0;
+}
+
+#notesMobileHeader + hr {
+    width: 90%;
+    margin: auto;
+}
+
+@media only screen and (min-width: 325px){
+
+    #notesMobileContainer {
+        width: 80%;
+        margin: auto;
+    }
+
+    #notesMobileHeader + hr {
+        width: 80%;
+    }
+
+}
+
+@media only screen and (min-width: 380px){
+
+    #notesMobileContainer {
+        width: 70%;
+        margin: auto;
+    }
+
+    #notesMobileHeader + hr {
+        width: 70%;
+    }
+
+}
+
+@media only screen and (min-width: 450px){
+
+    #notesMobileContainer {
+        width: 60%;
+        margin: auto;
+    }
+
+    #notesMobileHeader + hr {
+        width: 60%;
+    }
+
+}

@@ -1,0 +1,56 @@
+#removeNoteModal {
+    background-color: rgba(0, 0, 0, 0.801);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#removeNoteModalContent {
+    background-color: rgb(233, 233, 233);
+    margin: auto;
+    width: 90%;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 5rem;
+}
+
+#removeNoteModalContent h2 {
+    margin: 0;
+}
+
+#removeNoteModalContent p {
+    font-weight: bold;
+    margin-top: .5rem;
+}
+
+#removeNoteModalButtons {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#confirmDeleteNote, #cancelDeleteNote {
+    border: 1px solid black;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 40%;
+}
+
+#confirmDeleteNote {
+    background-color: rgb(0, 159, 199);
+}
+
+#confirmDeleteNote:hover {
+    background-color: rgb(0, 133, 167);
+    color: white;
+}
+
+#cancelDeleteNote {
+    background-color: rgb(211, 93, 93);
+}
+
+#cancelDeleteNote:hover {
+    background-color: rgb(209, 59, 59);
+    color: white;
+}

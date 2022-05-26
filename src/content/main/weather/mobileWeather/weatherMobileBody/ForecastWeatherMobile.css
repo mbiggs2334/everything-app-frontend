@@ -1,0 +1,196 @@
+#weatherMobile #forecastWeatherDisplay {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    box-shadow: 0 0 7px rgba(0, 0, 0, .5);
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 1rem .5rem;
+}
+
+#weatherMobile #forecastWeatherDailyContainer {
+    border-radius: 15px 15px 0 0;
+}
+
+
+#weatherMobile #forecastWeatherDisplay h2 {
+    margin: 0;
+    margin-bottom: .4rem;
+    text-decoration: underline;
+}
+
+#weatherMobile #forecastWeatherDaily {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    border-bottom: none;
+}
+
+#weatherMobile .weatherNight #forecastWeatherDaily  {
+    border: 1px solid white;
+    border-bottom: none;
+}
+
+#weatherMobile #forecastWeatherDailyPrecipChance {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 1rem;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+#weatherMobile .weatherNight #forecastWeatherDailyPrecipChance {
+    border-bottom: 1px solid white;
+}
+
+#weatherMobile #forecastWeatherDailyPrecipChance h3 {
+    text-align: center;
+    margin: 0;
+    margin-bottom: .5rem;
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
+#weatherMobile #forecastWeatherDailyTempsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+#weatherMobile .weatherNight #forecastWeatherDailyTempsContainer {
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+}
+
+#weatherMobile #forecastWeatherDailyTempsContainer h3 {
+    margin: 0;
+    margin-bottom: .5rem;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#weatherMobile #forecastWeatherDailyTempsContainer i {
+    font-size: 1.1rem;
+}
+
+#weatherMobile #forecastWeatherDailyTemps {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#weatherMobile #forecastWeatherSunTimes {
+    padding: .5rem;
+    font-weight: bold;
+}
+
+#weatherMobile #forecastWeatherSunTimes h2 {
+    display: inline-block;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+#weatherMobile #forecastWeatherSunTimes span {
+    display: block;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+#weatherMobile #forecastWeatherHourly {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    border: 1px solid black;
+    border-radius: 0 0 7px 7px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#weatherMobile .weatherNight #forecastWeatherHourly {
+    border: 1px solid white;
+}
+
+#weatherMobile .hourlyForecastDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    border-left: 1px solid black;
+}
+
+#weatherMobile .weatherNight .weatherNight {
+    border-right: 1px solid white;
+}
+
+#weatherMobile .hourlyForecastDiv:first-child {
+    border-left: none;
+}
+
+@media only screen and (min-width: 450px){
+    #weatherMobile #forecastWeatherDaily {
+        flex-wrap: nowrap;
+    }
+
+    #weatherMobile #forecastWeatherDailyPrecipChance {
+        width: 100%;
+        border-bottom: none;
+        padding: 1rem .5rem;
+    }
+
+    #weatherMobile .weatherNight #forecastWeatherDailyPrecipChance {
+        border-bottom: none;
+    }
+
+    #weatherMobile #forecastWeatherDailyTempsContainer {
+        border-bottom: none;
+        width: 100%;
+        padding: 1rem .25rem;
+    }
+
+    #weatherMobile .weatherNight #forecastWeatherDailyTempsContainer {
+        border-bottom: none;
+    }
+
+
+    #weatherMobile #forecastWeatherSunTimes {
+        width: 100%;
+        padding: 1rem .5rem;
+        font-size: 1rem;
+    }
+
+    #weatherMobile .weatherNight #forecastWeatherSunTimes {
+        border-left: 1px solid white;
+    }
+
+    #weatherMobile .weatherDay #forecastWeatherSunTimes {
+        border-left: 1px solid black;
+    }
+
+    #weatherMobile #forecastWeatherSunTimes span {
+        margin-bottom: .5rem;
+    }
+
+    #weatherMobile #forecastWeatherSunTimes h2 {
+        display: block;
+        text-decoration: underline
+    }
+
+}
